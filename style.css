@@ -1,0 +1,167 @@
+:root {
+    --dark-blue-100:#609ED4;
+    --dark-blue-200:#356EA9;
+    --dark-blue-300:#0A3871;
+    --dark-blue-400:#072B61;
+    --dark-blue-500:#052051;
+
+    --light-blue-100:#F3F5FC;
+    --light-blue-200:#EFF1FA;
+    --light-blue-300:#E9ECF8;
+    --light-blue-400:#AAB2D5;
+    --light-blue-500:#757FB2;
+
+    --gray-100:#CED4DA;
+    --gray-200:#ADB5BD;
+    --gray-300:#868E96;
+    --gray-400:#495057;
+    --gray-500:#343A40;
+
+}
+
+body {
+    background: var(--light-blue-100);
+    font-family: Jost;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    margin: 40px 40px 40px;
+}
+
+h1 {
+    display: inline;
+    vertical-align: middle;
+}
+
+header h1:nth-child(2) {
+    font-size: xx-large;
+    color: var(--dark-blue-500);
+    font-weight: bolder;
+}
+
+main {
+    height: 550px;
+}
+
+.area-encriptador {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.input {
+    width: 50%;
+    position: fixed;
+    left: 250px;
+}
+
+.input-form {
+    width: 80%;
+    padding: 5px;
+}
+
+.input-form p {
+    margin: 10px;
+    color: var(--gray-400);
+}
+
+#input-text {
+    background: var(--light-blue-100);
+    border: none;
+    width: 100%;
+    height: 400px;
+    padding: 16px;
+    font-family: Jost;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--gray-500);
+    text-transform: lowercase;
+}
+
+.botones {
+    position: absolute;
+    right: 40px;
+}
+
+.boton {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--dark-blue-300);
+    padding: 5px 20px;
+    gap: 10px;
+    text-align: center;
+    font-family: Jost;
+}
+
+#encriptar {
+    background: var(--dark-blue-300);
+    color: white;
+}
+
+#desencriptar {
+    background: var(--gray-200);
+    color: var(--dark-blue-300);
+}
+
+.output {
+    justify-content: center;
+    padding: 20px;
+    max-width: 20%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 2px 2px #888888;
+    position: fixed;
+    right: 100px;
+    top: 50px;
+    bottom: 50px;
+}
+
+.output h2 {
+    color: var(--gray-500);
+    font-weight: 700;
+    size: 24px;
+    text-align: center;
+    line-height: 28.8px;
+    margin-top: 20px;
+}
+
+.output h3 {
+    color: var(--gray-400);
+    font-weight: 400;
+    size: 16px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.output img {
+    max-width: 100%;
+    max-height: 50%;
+    height: auto;
+    width: auto;
+}
+
+#copiar-texto {
+    background: #FFFFFF;
+    position: relative;
+    top: 28%;
+    left: 24%;
+}
+
+footer {
+    padding-left: 250px;
+}
+
+.developer {
+    display: inline;
+}
