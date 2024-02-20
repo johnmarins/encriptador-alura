@@ -12,34 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1><img src="./img/logologo-alura.png" alt="Logo Alura" class="logo"></h1>
-        <h1>Encriptador de Texto ONE</h1>
-    </header>
-    <main>
-        <div class="area-encriptador">
-            <section class="input">
-                <form class="input-form">
-                    <textarea id="input-text" required placeholder="Ingrese texto aqui"></textarea>
-                    <p><img src="./img/informacion.png" alt="info"> Solo letras minúsculas y sin acentos</p>
-                    <div class="botones">
-                        <input class="boton" id="encriptar" type="submit" value="Encriptar">
-                        <input class="boton" id="desencriptar" type="submit" value="Desencriptar">
-                    </div>
-                </form>
-            </section>
-            <section class="output">
-                <img src="./img/Muñecousuario.png" alt="Usuario buscando">
-                <h2>Ningún mensaje fue encontrado</h2>
-                <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
-                <button class="boton" id="copiar-texto">Copiar</button>
-            </section>
-        </div>
-    </main>
+    <div class="area-encriptador">
+        <header class="item encabezado">
+            <h1><img src="./img/logologo-alura.png" alt="logo-alura"></h1>
+            <h1>Encriptador de Texto Alura ONE</h1>
+        </header>
+        <form class="item input">
+            <textarea id="input-text" required placeholder="Ingrese texto aquí"></textarea>
+            <p><img src="./img/informacion.png" alt="icono-info">Solo letras minúsculas y sin acentos</p>
+            <input class="boton encriptar" type="submit" value="Encriptar">
+            <input class="boton desencriptar" type="submit" value="Desencriptar">
+        </form>
+        <section class="item output">
+            <img src="./img/Muñecousuario.png" alt="usuario-buscando">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            <button class="boton copiar">Copiar</button>
+        </section>
+    </div>
     <footer>
-        <p class="developer">Desarrollado por</p>
-        <p class="developer"><img src="./img/github.png" alt="logo-github"> johnmarins</p>
-        <p class="developer"><img src="./img/linkedin.png" alt="logo-linkedin">/johnedwinmarinsocha</p>
+        <p>Desarrolado por</p>
+        <p><img src="./img/github.png" alt="logo-github"> johnmarins</p>
+        <p><img src="./img/linkedin.png" alt="logo-linkedin"> johnedwinmarinsocha</p>
     </footer>
 </body>
 </html>

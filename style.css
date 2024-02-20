@@ -20,148 +20,120 @@
 }
 
 body {
-    background: var(--light-blue-100);
-    font-family: Jost;
-}
-
-.logo {
-    width: 120px;
-    height: 48px;
-    margin: 40px 40px 40px;
-}
-
-h1 {
-    display: inline;
-    vertical-align: middle;
-}
-
-header h1:nth-child(2) {
-    font-size: xx-large;
-    color: var(--dark-blue-500);
-    font-weight: bolder;
-}
-
-main {
-    height: 550px;
+    background: var(--light-blue-300);
 }
 
 .area-encriptador {
-    display: flex;
-    height: 100%;
-    margin: 0 auto;
-    padding: 5px;
+    width: 90%;
+    height: 650px;
+    margin: 20px auto 10px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas:
+    "n1 n1 n1 n1 n1 n1 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2"
+    "n3 n3 n3 n3 n3 n3 n2 n2";
+    gap: 15px;
+    background: var(--light-blue-300);
 }
 
-.input {
-    width: 50%;
-    position: fixed;
-    left: 250px;
-}
-
-.input-form {
-    width: 80%;
-    padding: 5px;
-}
-
-.input-form p {
-    margin: 10px;
-    color: var(--gray-400);
-}
-
-#input-text {
-    background: var(--light-blue-100);
-    border: none;
-    width: 100%;
-    height: 400px;
-    padding: 16px;
+.item {
+    font-size: 2rem;
     font-family: Jost;
-    font-weight: bold;
-    font-size: 26px;
-    color: var(--gray-500);
-    text-transform: lowercase;
-}
-
-.botones {
-    position: absolute;
-    right: 40px;
-}
-
-.boton {
-    display: inline-block;
-    width: 150px;
-    height: 40px;
-    border-radius: 15px;
-    border: 1px;
-    border-style: solid;
-    border-color: var(--dark-blue-300);
-    padding: 5px 20px;
-    gap: 10px;
     text-align: center;
-    font-family: Jost;
 }
 
-#encriptar {
-    background: var(--dark-blue-300);
-    color: white;
-}
-
-#desencriptar {
-    background: var(--gray-200);
+.encabezado {
+    display: flex;
+    align-items: center;
+    background:none;
+    grid-area: n1;
     color: var(--dark-blue-300);
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 .output {
-    justify-content: center;
-    padding: 20px;
-    max-width: 20%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
     background: #FFFFFF;
+    grid-area: n2;
     border-radius: 32px;
     box-shadow: 2px 2px #888888;
-    position: fixed;
-    right: 100px;
-    top: 50px;
-    bottom: 50px;
-}
-
-.output h2 {
-    color: var(--gray-500);
-    font-weight: 700;
-    size: 24px;
-    text-align: center;
-    line-height: 28.8px;
-    margin-top: 20px;
-}
-
-.output h3 {
-    color: var(--gray-400);
-    font-weight: 400;
-    size: 16px;
-    text-align: center;
-    line-height: 24px;
-    margin-top: 20px;
+    vertical-align: middle;
 }
 
 .output img {
-    max-width: 100%;
-    max-height: 50%;
-    height: auto;
-    width: auto;
+    margin-top: 30%;
+    width: 80%;
+    height: 304px;
+    object-fit: contain;
 }
 
-#copiar-texto {
-    background: #FFFFFF;
-    position: relative;
-    top: 28%;
-    left: 24%;
+.output p:nth-child(2) {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.output p:nth-child(3) {
+    font-size: 16px;
+    margin: 15px;
+}
+
+.input {
+    display: block;
+    background: none;
+    grid-area: n3;
+    padding: 15px 15px 15px 100px;
+}
+
+#input-text {
+    width: 100%;
+    height: 80%;
+    background: none;
+    border: none;
+    font-family: Jost;
+    font-size: 32px;
+    text-transform: lowercase;
+}
+
+.input p {
+    font-size: 12px;
+    margin: 15px;
+}
+
+.boton {
+    width: 25%;
+    height: 50px;
+    font-family: Jost;
+    border: solid;
+    border-color: var(--dark-blue-300);
+    border-radius: 24px;
+    border-width: 2px;
+}
+
+.encriptar {
+    background: var(--dark-blue-300);
+    color: #FFFFFF;
+}
+
+.desencriptar {
+    background: var(--gray-100);
+    color: var(--dark-blue-300);
+}
+
+.copiar {
+    background: none;
+    color: var(--dark-blue-300);
+    width: 70%;
 }
 
 footer {
-    padding-left: 250px;
-}
-
-.developer {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    font-family: Jost;
 }
