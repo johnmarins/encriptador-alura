@@ -34,7 +34,6 @@ function encrypt(textToEncrypt, keys) {
         keys[i][1]
       );
     }
-    console.log(keys[i][0],keys[i][1])
   }
   return textToEncrypt;
 }
@@ -64,7 +63,6 @@ function decrypt(textToDecrypt, keys) {
           keys[i][0]
         );
       }
-      console.log(keys[i][1],keys[i][0])
     }
     return textToDecrypt;
   }
