@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador Alura ONE</title>
-    <script src="app.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,28 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="area-encriptador">
-        <header class="item encabezado">
+    <div class="area-encryptor">
+        <header class="item header">
             <h1><img src="./img/logologo-alura.png" alt="logo-alura"></h1>
             <h1>Encriptador de Texto Alura ONE</h1>
         </header>
         <form class="item input">
             <textarea id="input-text" required placeholder="Ingrese texto aquí"></textarea>
             <p><img src="./img/informacion.png" alt="icono-info">Solo letras minúsculas y sin acentos</p>
-            <input class="boton encriptar" type="submit" value="Encriptar">
-            <input class="boton desencriptar" type="submit" value="Desencriptar">
+            <input class="btn encrypt" type="button" value="Encriptar" onclick="btnEncrypt();">
+            <input class="btn decrypt" type="button" value="Desencriptar" onclick="btnDecrypt();">
         </form>
         <section class="item output">
             <img src="./img/Muñecousuario.png" alt="usuario-buscando">
-            <p>Ningún mensaje fue encontrado</p>
+            <p class="output-text">Ningún mensaje fue encontrado</p>
             <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-            <button class="boton copiar">Copiar</button>
+            <button class="btn copybtn" onclick="copyText();">Copiar</button>
         </section>
     </div>
     <footer>
         <p>Desarrolado por</p>
-        <p><img src="./img/github.png" alt="logo-github"> johnmarins</p>
-        <p><img src="./img/linkedin.png" alt="logo-linkedin"> johnedwinmarinsocha</p>
+        <p><img src="./img/github.png" alt="logo-github"><a href="https://github.com/johnmarins" target="_blank" rel="noopener noreferrer">/johnmarins</a></p>
+        <p><img src="./img/linkedin.png" alt="logo-linkedin"><a href="https://www.linkedin.com/in/johnedwinmarinsocha/" target="_blank" rel="noopener noreferrer">/johnedwinmarinsocha</a></p>
     </footer>
+    <script src="app.js" defer></script>
 </body>
 </html>

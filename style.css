@@ -23,7 +23,7 @@ body {
     background: var(--light-blue-300);
 }
 
-.area-encriptador {
+.area-encryptor {
     width: 90%;
     height: 650px;
     margin: 20px auto 10px;
@@ -49,7 +49,7 @@ body {
     text-align: center;
 }
 
-.encabezado {
+.header {
     display: flex;
     align-items: center;
     background:none;
@@ -60,6 +60,9 @@ body {
 }
 
 .output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #FFFFFF;
     grid-area: n2;
     border-radius: 32px;
@@ -76,6 +79,7 @@ body {
 
 .output p:nth-child(2) {
     font-size: 24px;
+    width: auto;
     margin: 15px;
 }
 
@@ -106,7 +110,7 @@ body {
     margin: 15px;
 }
 
-.boton {
+.btn {
     width: 25%;
     height: 50px;
     font-family: Jost;
@@ -116,24 +120,97 @@ body {
     border-width: 2px;
 }
 
-.encriptar {
+.encrypt {
     background: var(--dark-blue-300);
     color: #FFFFFF;
 }
 
-.desencriptar {
+.decrypt {
     background: var(--gray-100);
     color: var(--dark-blue-300);
 }
 
-.copiar {
+.copybtn {
     background: none;
     color: var(--dark-blue-300);
     width: 70%;
+    margin: auto 0 auto 0;
+    display: none;
 }
 
 footer {
     display: flex;
     justify-content: center;
     font-family: Jost;
+    gap: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width:700px) {
+    body {
+        text-align: center;
+    }
+
+    .area-encryptor {
+        width: 100%;
+        height: fit-content;
+        margin: 20px auto 10px;
+        display: inline-block;
+        align-items: center;
+    }
+
+    .header {
+        display: block;
+        align-items: center;
+        background:none;
+        color: var(--dark-blue-300);
+        font-size: large;
+        font-weight: bolder;
+    }
+
+    .input {
+        align-items: center;
+        width: 90%;
+        margin: 15px 8px;
+        padding: 5px;
+    }
+
+    #input-text {
+        background-color: var(--light-blue-100);
+        font-size: medium;
+        text-align: center;
+        border: solid;
+        border-color: var(--dark-blue-300);
+        border-radius: 5px;
+        border-width: 2px;
+    }
+
+    .output {
+        border-radius: 5px;
+        margin: 15px 20px 15px 20px;
+        padding: 15px;
+        width: 83%;
+        height: 30%;
+    }
+
+    .output img {
+        display: none;
+        width: 64px;
+        height: 64px;
+        margin: auto auto 15px auto;
+    }
+
+    .copybtn {
+        margin: 5px;
+    }
+
+    footer {
+        height: 90%;
+        display: inline-block;
+        text-align: center;
+    }
 }
