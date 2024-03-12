@@ -37,8 +37,6 @@
 
 - [Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
 
-- [Conclusión](#conclusión)
-
 <h2 id="descripción-del-proyecto">Descripción del proyecto</h2>
 <p>Este proyecto fue creado como propuesta de solución al challenge encriptador del programa de formación ONE de Oracle y Alura Latam. El proyecto consiste en una aplicación web que permite al usuario ingresar una cadena de texto, que es transformada para proteger su legibilidad, y posterior puede ser devuelta al texto original.</p>
 
